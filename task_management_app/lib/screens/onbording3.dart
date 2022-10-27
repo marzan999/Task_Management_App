@@ -2,10 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:task_management_app/screens/onbording3.dart';
 
-class Onbording2 extends StatelessWidget {
-  const Onbording2({super.key});
+class Onbording3 extends StatelessWidget {
+  const Onbording3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class Onbording2 extends StatelessWidget {
                 Container(
                   width: double.infinity,
                   child: Text(
-                    "Create a Task and\nAssign it to Your\nTeam Members",
+                    "Get Notified when\nyou Get a New\nAssignment",
                     style: TextStyle(
                         fontSize: 36,
                         color: Color(0xffE4E4E6),
@@ -65,7 +64,7 @@ class Onbording2 extends StatelessWidget {
                         ElevatedButton(
                             onPressed: (() {}),
                             style: ElevatedButton.styleFrom(
-                              primary: Color(0xff246BFD),
+                              primary: Colors.grey,
                             ),
                             child: Text('')),
                         SizedBox(
@@ -73,11 +72,10 @@ class Onbording2 extends StatelessWidget {
                         ),
                         ElevatedButton(
                           onPressed: (() {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => Onbording3()));
+                            Navigator.of(context).pop();
                           }),
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.grey,
+                            primary: Color(0xff246BFD),
                           ),
                           child: Text(''),
                         ),
