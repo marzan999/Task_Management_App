@@ -2,7 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:task_management_app/screens/login.dart';
 import 'package:task_management_app/screens/onbording3.dart';
+import 'package:task_management_app/screens/signup.dart';
 
 class Onbording2 extends StatelessWidget {
   const Onbording2({super.key});
@@ -87,8 +89,8 @@ class Onbording2 extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 200),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.of(context).push(MaterialPageRoute(
-                      //     builder: (context) => Onbording2()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => SignUpPage()));
                     },
                     child: Container(
                       child: Padding(
@@ -115,8 +117,8 @@ class Onbording2 extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 20),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.of(context).push(MaterialPageRoute(
-                      //     builder: (context) => Onbording2()));
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => LoginPage()));
                     },
                     child: Container(
                       child: Padding(

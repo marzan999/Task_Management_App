@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:task_management_app/screens/login.dart';
+import 'package:task_management_app/screens/signup.dart';
 
 class Onbording3 extends StatelessWidget {
   const Onbording3({super.key});
@@ -62,7 +64,9 @@ class Onbording3 extends StatelessWidget {
                           width: 5,
                         ),
                         ElevatedButton(
-                            onPressed: (() {}),
+                            onPressed: (() {
+                              Navigator.of(context).pop();
+                            }),
                             style: ElevatedButton.styleFrom(
                               primary: Colors.grey,
                             ),
@@ -71,9 +75,7 @@ class Onbording3 extends StatelessWidget {
                           width: 5,
                         ),
                         ElevatedButton(
-                          onPressed: (() {
-                            Navigator.of(context).pop();
-                          }),
+                          onPressed: (() {}),
                           style: ElevatedButton.styleFrom(
                             primary: Color(0xff246BFD),
                           ),
@@ -85,8 +87,8 @@ class Onbording3 extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 200),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.of(context).push(MaterialPageRoute(
-                      //     builder: (context) => Onbording2()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => SignUpPage()));
                     },
                     child: Container(
                       child: Padding(
@@ -113,8 +115,8 @@ class Onbording3 extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 20),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.of(context).push(MaterialPageRoute(
-                      //     builder: (context) => Onbording2()));
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => LoginPage()));
                     },
                     child: Container(
                       child: Padding(
