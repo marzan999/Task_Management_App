@@ -2,10 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:task_management_app/screens/onbording2.dart';
 
-class Onbording1 extends StatelessWidget {
-  const Onbording1({super.key});
+class Onbording2 extends StatelessWidget {
+  const Onbording2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -51,20 +50,12 @@ class Onbording1 extends StatelessWidget {
                     decoration: BoxDecoration(color: Colors.transparent),
                     child: Row(
                       children: [
-                        ElevatedButton(
-                            onPressed: (() {}),
-                            style: ElevatedButton.styleFrom(
-                              primary: Color(0xff246BFD),
-                            ),
-                            child: Text('')),
+                        ElevatedButton(onPressed: (() {}), child: Text('')),
                         SizedBox(
                           width: 5,
                         ),
                         ElevatedButton(
-                            onPressed: (() {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => Onbording2()));
-                            }),
+                            onPressed: (() {}),
                             style: ElevatedButton.styleFrom(
                               primary: Colors.grey,
                             ),
@@ -85,8 +76,8 @@ class Onbording1 extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 200),
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => Onbording1()));
+                      // Navigator.of(context).push(MaterialPageRoute(
+                      //     builder: (context) => Onbording2()));
                     },
                     child: Container(
                       child: Padding(
@@ -113,8 +104,8 @@ class Onbording1 extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 20),
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => Onbording1()));
+                      // Navigator.of(context).push(MaterialPageRoute(
+                      //     builder: (context) => Onbording2()));
                     },
                     child: Container(
                       child: Padding(
